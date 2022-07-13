@@ -1,0 +1,2 @@
+file:Version_Notes.txt
+[2022_06]: This functionality aims to create 5 different zones, using same hardware with some change, briefly: add new selector zone cube to control until 5 zones.
