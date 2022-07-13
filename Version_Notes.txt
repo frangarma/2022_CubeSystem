@@ -1,2 +1,8 @@
 file:Version_Notes.txt
-[2022_06]: This functionality aims to create 5 different zones, using same hardware with some change, briefly: add new selector zone cube to control until 5 zones.
+This file are going to store, the differents functionalities deployed in the project 2022_CubeSyste, in order to use a standar format, use next terminology:
+[xxxx_yy]:Brief explanation.
+functionalities are in ascendent order, up newer down eldest:
+
+
+
+[2022_06]: This functionality aims to create 8 different zones, using same hardware with some change, briefly: add new selector zone cube to control until 8 zones.
