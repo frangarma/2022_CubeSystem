@@ -6,3 +6,4 @@ functionalities are in ascendent order, up newer down eldest:
 
 
 [2022_06]: This functionality aims to create 8 different zones, using same hardware with some change, briefly: add new selector zone cube to control until 8 zones.
+Throughout a pin's reconfiguration, it is goinng to use GPIO to add until 8 zones in total and a new ADC channel in order to real a new cube zone selector.
