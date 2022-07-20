@@ -66,20 +66,21 @@ void Chw::pin_manager()
 void Chw::pin_manager_digital_gpio(){
 	
 	//Configuration of digital input pin
-	DDRD |=(0<<PIND2);//Digital input INT0, open menu/enter
-	DDRD |=(0<<PIND3);//Digital input INT1, Dropping just now
-	DDRD |=(0<<PIND6);//Digital input PCINT22, switch minus
-	DDRD |=(0<<PIND7);//Digital input PCINT23, switch plus
-	DDRD |=(0<<PIND5);//Digital input PCINT21, to detect changes in dice position
 		
 	//Configuration of digital output pin
+	//ToDo: configure port's number in function of const NUMZONASSISTEMA (definiciones.h)
 	DDRB |=(1<<PINB0);//Digital output associated to switch of zone 1
 	DDRB |=(1<<PINB1);//Digital output associated to Led1=Activity
 	DDRB |=(1<<PINB2);//Digital output associated to Led2=Fail
-	
-	//DDRC |= ();//Digital output associated to Out_aux, currently associated with wrong pin ADC6
-	DDRD |=(1<<PIND4);//Digital output PCINT20, used as zonaRiego.02
-	
+	DDRD |=(1<<PIND2);//Digital output associated to switch of zone 2
+	DDRD |=(1<<PIND3);//Digital output associated to switch of zone 3
+	DDRD |=(1<<PIND4);//Digital output associated to switch of zone 4
+	DDRD |=(1<<PIND5);//Digital output associated to switch of zone 5
+	DDRD |=(1<<PIND6);//Digital output associated to switch of zone 6
+	DDRD |=(1<<PIND7);//Digital output associated to switch of zone 7
+	//ToDo: See if is possible to configure this pin ADC6 as GPIO and has some relation witn TQFP-32 package. Possible option would be to use PB7 pin
+	DDRB |=(1<<PINB7);//Digital output associated to switch of zone 8
+			
 	//CONFIGURATION SDA & SCL PIN of I2C protocol in PORT C: Used pull-up resistor in PCB
 	//Note that is not necessary configure de DDRC�s pin corresponding
 	PORTC|= (1<<PINC4) | (1<<PINC5); //Pin 4 & 5 PULL UP TO I2C PROTOCOL

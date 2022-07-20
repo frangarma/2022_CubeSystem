@@ -27,7 +27,7 @@ Cadc::~Cadc()
 void Cadc::pin_manager(void)
 {
 	//Configurations of digital to analog converter pins
-	PORTC |= (0<<PINC0)|(0<<PINC1)|(0<<PINC2)|(0<<PINC3);// PINC0 & PINC1 & PINC2 & PINC3: digital to analog conversion ADCO & ADC1 respectively
+	PORTC |= (0<<PINC0)|(0<<PINC1)|(0<<PINC2)|(0<<PINC3);// PINC0 & PINC1 & PINC2 & PINC3: digital to analog conversion ADCO & ADC1 & ADC2 & ADC3 respectively
 }
 
 void Cadc::init(void)

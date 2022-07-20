@@ -108,7 +108,7 @@ ISR(WDT_vect)
 	
 }
 
-Csistema sistema= Csistema();
+Csistema sistema= Csistema(NUMZONASSISTEMA);
 
 //Set hour to the system year= yy-2000; L=1
 void setClock(int y = 0, int m = 0, int d = 0, int dow = 0, int h = 0, int mm = 0, int ss = 0);

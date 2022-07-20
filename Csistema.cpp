@@ -30,6 +30,12 @@ Csistema::Csistema(uint8_t _numZonas)
 	//Update horaActual from rtc_ds3231
 	switch(numZonas)
 	{
+		case 8:
+			zonaRiego[7] = CzonaRiego(this, clock, horaActual, i2csystem, 8, 0x01, 'B');// Decimal correspondence to pin is PINB0
+		case 7:
+			zonaRiego[6] = CzonaRiego(this, clock, horaActual, i2csystem, 7, 0x01, 'B');// Decimal correspondence to pin is PINB0
+		case 6:
+			zonaRiego[5] = CzonaRiego(this, clock, horaActual, i2csystem, 6, 0x01, 'B');// Decimal correspondence to pin is PINB0
 		case 5:
 			zonaRiego[4] = CzonaRiego(this, clock, horaActual, i2csystem, 5, 0x01, 'B');// Decimal correspondence to pin is PINB0
 		case 4:

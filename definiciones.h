@@ -69,8 +69,8 @@ const uint16_t shortcutResistor = 25;
 const uint16_t infiniteResistor = 50000;
 const uint16_t arrayValoresResistor [] PROGMEM ={1000, 2000, 3000, 4020, 5100, 6040, 6980, 7870, 8870, 9760, 11000, 12100, 13000, 14000, 15000, 16200, 17400, 18200, 19100, 20000 };// Here is defined the possible values of the resistors install in the physicall cube
 
-// Numero de zonas del sistema
-const uint8_t NUMZONASSISTEMA = 5;
+//Current version lets until 8 zones, using internal GPIO of ATMEGA328P
+const uint8_t NUMZONASSISTEMA = 8;
 
 // Definitions in the case of working with several droppings zone
 
