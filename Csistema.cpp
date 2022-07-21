@@ -31,19 +31,19 @@ Csistema::Csistema(uint8_t _numZonas)
 	switch(numZonas)
 	{
 		case 8:
-			zonaRiego[7] = CzonaRiego(this, clock, horaActual, i2csystem, 8, 0x01, 'B');// Decimal correspondence to pin is PINB0
+			zonaRiego[7] = CzonaRiego(this, clock, horaActual, i2csystem, 8, 0x80, 'B');// Decimal correspondence to pin is PINB7
 		case 7:
-			zonaRiego[6] = CzonaRiego(this, clock, horaActual, i2csystem, 7, 0x01, 'B');// Decimal correspondence to pin is PINB0
+			zonaRiego[6] = CzonaRiego(this, clock, horaActual, i2csystem, 7, 0x80, 'D');// Decimal correspondence to pin is PIND7
 		case 6:
-			zonaRiego[5] = CzonaRiego(this, clock, horaActual, i2csystem, 6, 0x01, 'B');// Decimal correspondence to pin is PINB0
+			zonaRiego[5] = CzonaRiego(this, clock, horaActual, i2csystem, 6, 0x40, 'D');// Decimal correspondence to pin is PIND6
 		case 5:
-			zonaRiego[4] = CzonaRiego(this, clock, horaActual, i2csystem, 5, 0x01, 'B');// Decimal correspondence to pin is PINB0
+			zonaRiego[4] = CzonaRiego(this, clock, horaActual, i2csystem, 5, 0x20, 'D');// Decimal correspondence to pin is PIND5
 		case 4:
-			zonaRiego[3] = CzonaRiego(this, clock, horaActual, i2csystem, 4, 0x01, 'B');// Decimal correspondence to pin is PINB0
+			zonaRiego[3] = CzonaRiego(this, clock, horaActual, i2csystem, 4, 0x10, 'D');// Decimal correspondence to pin is PIND4
 		case 3:
-			zonaRiego[2] = CzonaRiego(this, clock, horaActual, i2csystem, 3, 0x01, 'B');// Decimal correspondence to pin is PINB0
+			zonaRiego[2] = CzonaRiego(this, clock, horaActual, i2csystem, 3, 0x08, 'D');// Decimal correspondence to pin is PIND3
 		case 2:
-			zonaRiego[1] = CzonaRiego(this, clock, horaActual, i2csystem, 2, 0x10, 'D');// Decimal correspondence to pin is PIN
+			zonaRiego[1] = CzonaRiego(this, clock, horaActual, i2csystem, 2, 0x04, 'D');// Decimal correspondence to pin is PIND2
 		case 1:
 			zonaRiego[0] = CzonaRiego(this, clock, horaActual, i2csystem, 1, 0x01, 'B');// Decimal correspondence to pin is PINB0
 		break;
