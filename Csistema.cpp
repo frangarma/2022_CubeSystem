@@ -51,6 +51,11 @@ Csistema::Csistema(uint8_t _numZonas)
 	zonaRiego_01 = CzonaRiego(this, clock, horaActual, i2csystem, 1, 0x01, 'B');// Decimal correspondence to pin is PINB0
 	zonaRiego_02 = CzonaRiego(this, clock, horaActual, i2csystem, 2, 0x10, 'D');// Decimal correspondence to pin is PIN
 	avreeprom = CeepromAVR(this);
+	
+	dadoZone = CdadoZone(0);
+	dadoDia = CdadoDia(1);
+   	dadoHora = CdadoHora(2);
+   	dadoDuracion= CdadoDuracion(3);
 } //Csistema
 
 void Csistema::inicializa()
