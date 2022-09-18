@@ -18,6 +18,7 @@
 #include "Ccanvas.h"
 #include <util/delay.h>
 #include "CeepromAVR.h"
+#include "CdadoZone.h"
 
 
 
