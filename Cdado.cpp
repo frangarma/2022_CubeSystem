@@ -4,10 +4,10 @@
 * Created: 06/04/2018 18:34:08
 * Author: Fran
 */
-
+/*
 
 #include "Cdado.h"
-#include "BSP.h"
+#include "Cadc.h""
 
 
 // default constructor
@@ -31,3 +31,4 @@ void Cdado::off(){
 uint16_t Cdado::read(){
 	return read_adc(channel);
 }
+*/

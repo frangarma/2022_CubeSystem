@@ -6,7 +6,7 @@
  */ 
 
 #include "Ccanvas.h"
-#include "Cbsp.h"
+//#include "Cbsp.h"
 #include "definiciones.h"
 #include "variablesglobales.h"
 #include <string.h>
@@ -64,7 +64,6 @@ void Ccanvas::scroll_throug_menu(void)
 		horaActual = sistema->getDate();
 		refresh(lcdProgmode);
 		new_entry_mode_prog=0;
-		new_INT0=0;
 	}
 	else
 	{
@@ -349,9 +348,6 @@ void Ccanvas::enter_programming_mode(void)
 		{
 			plusMenuMode = 0;
 		}
-		/*		
-		else if (menu_cursor_position==position_cursor_GOOUT) { set_go_out_menu +=plus ;}
-		plus=0;*/
 	}	
 	 
 	else if (minusMenuMode)

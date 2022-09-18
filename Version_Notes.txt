@@ -1,5 +1,5 @@
 file:Version_Notes.txt
-This file are going to store, the differents functionalities deployed in the project 2022_CubeSyste, in order to use a standar format, use next terminology:
+This file are going to store, the differents functionalities deployed in the project 2022_CubeSystem, in order to use a standar format, use next terminology:
 [xxxx_yy]:Brief explanation.
 functionalities are in ascendent order, up newer down eldest:
 

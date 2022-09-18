@@ -4,7 +4,7 @@
 * Created: 06/04/2018 18:34:08
 * Author: Fran
 */
-
+/*
 
 #ifndef __CUBO_H__
 #define __CUBO_H__
@@ -29,4 +29,4 @@ class Cdado {
 
 
 	
-	
+*/

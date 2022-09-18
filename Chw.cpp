@@ -109,7 +109,7 @@ void Chw::TIMER1_enable(void)
  		TCCR1B = (1 << WGM12) | (1 << CS10) | (1 << CS12);
 	 
 	#else 
-	 /To prevent the lack of CPU frecuency definition
+	 //To prevent the lack of CPU frecuency definition
 	 #warning "Not defined macro F_CPU: 8MHZ nor 16 MHZ in definitios"
 	#endif
 
@@ -140,7 +140,7 @@ void Chw::TIMER1_enable_Fast(void)
  		TCCR1B = (1 << WGM12) | (1 << CS10) | (1 << CS12);
 	 
 	#else 
-	 /To prevent the lack of CPU frecuency definition
+	 //To prevent the lack of CPU frecuency definition
 	 #warning "Not defined macro F_CPU: 8MHZ nor 16 MHZ in definitios"
 	#endif
 

@@ -24,25 +24,7 @@
 #define BAUD_PRESCALE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
 
 
-
-
-#define AVERAGE_IDLE_TIME	30
-#define LONG_IDLE_TIME		60
-
-#define analogPin1	1
-
-
-
-
-
-
-#define OFF 0x00
-#define ON	0x01
-
-#define		PROGRAMMED		0x01
-#define		UNPROGRAMMED 	0x00
-
-#define TimeOutMenuInactivity 5
+const PROGMEM uint8_t TimeOutMenuInactivity   = 5;
 
 //It is used typedef in order to work with alias and to simplify the use of tipes lastly
 
