@@ -50,7 +50,7 @@ uint8_t* CdadoDia::valor(uint8_t *_doWRiego)
 	else if ((r >= (arrayValoresResistor[3]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[3]+toleranceenohmLecturasResistor))) {	i=3; }
 	else if ((r >= (arrayValoresResistor[4]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[4]+toleranceenohmLecturasResistor))) {	i=4; }
 	else if ((r >= (arrayValoresResistor[5]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[5]+toleranceenohmLecturasResistor))) {	i=5; }
-	else i=10;// Caso para el default
+	else i=100;// Caso para el default
 		
 	#ifdef DEBUGGER_MODE
 	sprintf(serialprintdebugger, "case_d=%d,", i);

@@ -33,8 +33,8 @@ uint8_t CdadoDuracion :: valor () {
 	if (x==1023) { r=0; } // avoid 0 division
 	else { r= ( referenceResistor / ((1023.0/x)-1) ); } // r is the resistor value in ohm
 	#ifdef DEBUGGER_MODE_R
-	sprintf(serialprintdebugger, "%d,", r);
-	UsartTransmitData(serialprintdebugger);
+		sprintf(serialprintdebugger, "%d,", r);
+		UsartTransmitData(serialprintdebugger);
 	#endif
 	if      ((r >= (arrayValoresResistor[0]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[0]+toleranceenohmLecturasResistor))) { i=0; }
 	else if ((r >= (arrayValoresResistor[1]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[1]+toleranceenohmLecturasResistor))) { i=1; }
@@ -42,11 +42,11 @@ uint8_t CdadoDuracion :: valor () {
 	else if ((r >= (arrayValoresResistor[3]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[3]+toleranceenohmLecturasResistor))) {	i=3; }
 	else if ((r >= (arrayValoresResistor[4]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[4]+toleranceenohmLecturasResistor))) {	i=4; }
 	else if ((r >= (arrayValoresResistor[5]-toleranceenohmLecturasResistor)) && ( r <= (arrayValoresResistor[5]+toleranceenohmLecturasResistor))) {	i=5; }
-	else i=10;// Caso para el default
+	else i=100;// Caso para el default
 	
 	#ifdef DEBUGGER_MODE
-	sprintf(serialprintdebugger, "case_m=%d \r", i);
-	UsartTransmitData(serialprintdebugger);
+		sprintf(serialprintdebugger, "case_m=%d \r", i);
+		UsartTransmitData(serialprintdebugger);
 	#endif
 	
 	switch (i) {

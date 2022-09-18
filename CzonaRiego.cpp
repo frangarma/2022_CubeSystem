@@ -49,9 +49,9 @@ CzonaRiego :: CzonaRiego (Csistema* _sistema, const Cclock& _clock, const Cfecha
 	duracionRiego= 0;
 	setminutoRiego(0);// Currently dices get times oclock.
 	offset_minutosRiego=0;	
-	dadoDia = CdadoDia(1);
-   	dadoHora = CdadoHora(2);
-   	dadoDuracion= CdadoDuracion(3);
+	//dadoDia = CdadoDia(1);
+   	//dadoHora = CdadoHora(2);
+   	//dadoDuracion= CdadoDuracion(3);
 	ajustadoDroppingJustNow=0;
 	is_justDroppingNow = false;
 	nowRunning = false;

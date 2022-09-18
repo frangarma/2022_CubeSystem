@@ -42,6 +42,10 @@ class Csistema
 		systemStatus status, lastStatus;
 		Ci2c* i2csystem; 
 		CeepromAVR avreeprom;
+		CdadoZone dadoZone;
+		CdadoDia dadoDia;
+  		CdadoHora dadoHora;
+  		CdadoDuracion dadoDuracion;
 
 
 	//functions

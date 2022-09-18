@@ -51,9 +51,9 @@ class CzonaRiego : public Cswitchable
 		uint8_t horaRiegoDroppingJustNow;
 		uint8_t minutoInicioRiegoJustoDroppingNow;
 		uint8_t duracionDroppingJustNow;
-  		CdadoDia dadoDia;
-  		CdadoHora dadoHora;
-  		CdadoDuracion dadoDuracion;
+  		//CdadoDia dadoDia;
+  		//CdadoHora dadoHora;
+  		//CdadoDuracion dadoDuracion;
 		Cprogram programa;
 		Cclock clock;
 		Cfecha horaActual, programStartDate, programEndDate;
